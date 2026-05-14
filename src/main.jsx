@@ -1,7 +1,8 @@
 import { createRoot } from "react-dom/client";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
+
 import "./index.css";
-import { Navigate } from "react-router-dom";
+
 import HomePage from "./pages/Home/HomePage";
 import CategoriesPage from "./pages/Categories/CategoriesPage";
 import FCFSVisualizer from "./pages/Visualizer/FCFSVisualizer";
@@ -20,7 +21,7 @@ import ArrayVisualizer from "./pages/Visualizer/ArrayVisualizer";
 import TreeVisualizer from "./pages/Visualizer/TreeVisualizer";
 
 createRoot(document.getElementById("root")).render(
-  <BrowserRouter>
+  <BrowserRouter basename="/Algorithm_Visualizer">
     <NavBar />
 
     <Routes>
@@ -28,41 +29,52 @@ createRoot(document.getElementById("root")).render(
       <Route path="/Categories" element={<CategoriesPage />} />
       <Route path="/Categories/FCFSAlgorithm" element={<FCFSVisualizer />} />
       <Route path="/Categories/SJFAlgorithm" element={<SJFVisualizer />} />
+
       <Route
         path="/Categories/RoundRobinAlgorithm"
         element={<RoundRobinVisualizer />}
       />
+
       <Route
         path="/Categories/PRIORITYAlgorithm"
         element={<PriorityVisualizer />}
       />
+
       <Route
         path="/Categories/Diskfcfs"
         element={<DiskVisualizer algo="FCFS" />}
       />
+
       <Route
         path="/Categories/Disksstf"
         element={<DiskVisualizer algo="SSTF" />}
       />
+
       <Route
         path="/Categories/Diskscan"
         element={<DiskVisualizer algo="SCAN" />}
       />
+
       <Route
         path="/Categories/Diskcscan"
         element={<DiskVisualizer algo="C-SCAN" />}
       />
+
       <Route
         path="/Categories/Disklook"
         element={<DiskVisualizer algo="LOOK" />}
       />
+
       <Route path="/Categories/Stack" element={<StackVisualizer />} />
       <Route path="/Categories/Queue" element={<QueueVisualizer />} />
       <Route path="/Categories/LinkedList" element={<LinkedListVisualizer />} />
       <Route path="/Categories/Array" element={<ArrayVisualizer />} />
       <Route path="/Categories/Tree" element={<TreeVisualizer />} />
+
       <Route path="/About" element={<About />} />
       <Route path="/Contact" element={<Contact />} />
+
+      {/* Redirect invalid routes */}
       <Route path="*" element={<Navigate to="/" />} />
     </Routes>
 
