@@ -1,7 +1,7 @@
 import { createRoot } from "react-dom/client";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import "./index.css";
-
+import { Navigate } from "react-router-dom";
 import HomePage from "./pages/Home/HomePage";
 import CategoriesPage from "./pages/Categories/CategoriesPage";
 import FCFSVisualizer from "./pages/Visualizer/FCFSVisualizer";
@@ -63,6 +63,7 @@ createRoot(document.getElementById("root")).render(
       <Route path="/Categories/Tree" element={<TreeVisualizer />} />
       <Route path="/About" element={<About />} />
       <Route path="/Contact" element={<Contact />} />
+      <Route path="*" element={<Navigate to="/" />} />
     </Routes>
 
     <Footer />
