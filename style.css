@@ -1,0 +1,661 @@
+body {
+  font-family: "Poppins", sans-serif;
+}
+.container-fluid {
+  margin: 0;
+}
+.herotext {
+  font-size: 1rem;
+  line-height: 1.6; /* Perfect readable spacing */
+  margin: auto;
+}
+
+.hero {
+  margin-bottom: 2rem;
+  gap: 2rem;
+}
+
+.osCat {
+  margin-top: 100px;
+  box-shadow: 0px 11px 9.300000190734863px 14px rgb(0 0 0 / 0.25);
+  background-color: #ffffff;
+}
+.OsCont {
+  margin-top: 10px;
+}
+.fcfsHeading {
+  margin-top: 10px;
+}
+.fcfsinput {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+}
+#select {
+  width: 100%;
+  padding: 0 30px 0 30px;
+  border-radius: 5px;
+}
+#ArrivalTime {
+  width: 100%;
+  border-radius: 5px;
+}
+#BurstTime {
+  width: 100%;
+  border-radius: 5px;
+}
+form .btn-primary {
+  text-align: center;
+}
+.fcfcTable {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.LogoName {
+  color: "black";
+  text-decoration: none;
+}
+.cloud-container {
+  position: relative;
+  width: 100%;
+  height: 260px;
+  margin-top: 40px;
+}
+
+.cloud-item {
+  position: absolute;
+  padding: 14px 34px;
+  border-radius: 50px;
+  background: linear-gradient(135deg, #0d6efd, #009fff);
+  color: white;
+  font-weight: 600;
+  font-size: 15px;
+  box-shadow: 0 15px 35px rgba(13, 110, 253, 0.25);
+  transition: 0.3s ease;
+}
+
+/* FIXED BASE POSITIONS */
+.cloud-0 {
+  top: 20px;
+  left: 8%;
+}
+.cloud-1 {
+  top: 90px;
+  left: 22%;
+}
+.cloud-2 {
+  top: 30px;
+  left: 30%;
+}
+.cloud-3 {
+  top: 120px;
+  left: 55%;
+}
+.cloud-4 {
+  top: 50px;
+  right: 30%;
+}
+.cloud-5 {
+  top: 150px;
+  right: 15%;
+}
+.cloud-6 {
+  top: 40px;
+  right: 45%;
+}
+.cloud-7 {
+  top: 100px;
+  right: 5%;
+}
+.tech-card {
+  padding: 15px 25px;
+  background: linear-gradient(135deg, #0d6efd, #009fff);
+  color: white;
+  border-radius: 30px;
+  font-weight: 600;
+  box-shadow: 0 10px 20px rgba(13, 110, 253, 0.25);
+  transition: 0.3s ease;
+}
+
+.tech-card:hover {
+  transform: translateY(-5px);
+}
+.btn-primary {
+  transition: 0.3s ease;
+}
+
+.btn-primary:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgba(13, 110, 253, 0.3);
+}
+/* Container */
+.cloud-container {
+  position: relative;
+  width: 100%;
+  height: 350px;
+  overflow: hidden;
+}
+
+/* Cloud Buttons */
+.cloud-item {
+  position: absolute;
+  padding: 18px 35px;
+  border-radius: 50px;
+  background: linear-gradient(to right, #009fff, #005bea);
+  color: white;
+  font-weight: bold;
+  font-size: 24px;
+  box-shadow: 0 10px 30px rgba(0, 123, 255, 0.3);
+  user-select: none;
+  white-space: nowrap;
+}
+
+/* Desktop Positions */
+.cloud-0 {
+  top: 40px;
+  left: 8%;
+}
+
+.cloud-1 {
+  top: 160px;
+  left: 20%;
+}
+
+.cloud-2 {
+  top: 60px;
+  left: 40%;
+}
+
+.cloud-3 {
+  top: 190px;
+  left: 55%;
+}
+
+.cloud-4 {
+  top: 80px;
+  left: 70%;
+}
+
+.cloud-5 {
+  top: 220px;
+  left: 80%;
+}
+
+.cloud-6 {
+  top: 30px;
+  left: 30%;
+}
+
+.cloud-7 {
+  top: 140px;
+  left: 75%;
+}
+
+/* ================= MOBILE ================= */
+
+@media (max-width: 768px) {
+  .cloud-container {
+    height: 250px;
+  }
+
+  .cloud-item {
+    padding: 12px 22px;
+    font-size: 16px;
+  }
+
+  .cloud-0 {
+    top: 20px;
+    left: 5%;
+  }
+
+  .cloud-1 {
+    top: 110px;
+    left: 18%;
+  }
+
+  .cloud-2 {
+    top: 35px;
+    left: 52%;
+  }
+
+  .cloud-3 {
+    top: 160px;
+    left: 50%;
+  }
+
+  .cloud-4 {
+    top: 70px;
+    left: 70%;
+  }
+
+  .cloud-5 {
+    top: 180px;
+    left: 72%;
+  }
+
+  .cloud-6 {
+    top: 20px;
+    left: 35%;
+  }
+
+  .cloud-7 {
+    top: 120px;
+    left: 65%;
+  }
+}
+/* ================= NAVBAR ================= */
+
+.navbar {
+  background-color: white !important;
+}
+
+/* Logo */
+.logo h1 {
+  font-size: 3rem;
+  margin: 0;
+}
+
+/* Nav Links */
+.nav-link {
+  font-size: 1.2rem;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+.nav-link:hover {
+  color: #009fff !important;
+}
+
+/* ================= TABLET ================= */
+
+@media (max-width: 992px) {
+  .container-fluid {
+    margin: 0 20px !important;
+    height: auto !important;
+    padding: 10px 0;
+  }
+
+  .logo h1 {
+    font-size: 2.3rem;
+  }
+
+  .navbar-collapse {
+    margin-top: 15px;
+    background: white;
+    padding: 15px;
+    border-radius: 15px;
+  }
+
+  .navbar-nav {
+    align-items: center;
+  }
+
+  .nav-item {
+    margin: 8px 0;
+  }
+
+  .nav-link {
+    font-size: 1.1rem;
+  }
+}
+
+/* ================= MOBILE ================= */
+
+@media (max-width: 576px) {
+  .container-fluid {
+    margin: 0 10px !important;
+  }
+
+  .logo h1 {
+    font-size: 2rem;
+  }
+
+  .navbar-toggler {
+    padding: 4px 8px;
+  }
+
+  .navbar-collapse {
+    margin-top: 10px;
+    padding: 12px;
+    border-radius: 12px;
+    text-align: center;
+  }
+
+  .nav-link {
+    font-size: 1rem;
+    padding: 10px 0 !important;
+  }
+}
+/* Logo */
+.logo h1 {
+  font-size: 3rem;
+}
+
+/* Nav Links */
+.nav-link {
+  font-size: 1.2rem;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+.nav-link:hover {
+  color: #009fff !important;
+}
+
+/* ================= TABLET ================= */
+
+@media (max-width: 992px) {
+  .logo h1 {
+    font-size: 2.3rem;
+  }
+
+  .navbar-collapse {
+    width: 100%;
+    margin-top: 15px;
+    padding-bottom: 10px;
+  }
+
+  .navbar-nav {
+    align-items: center;
+    gap: 10px;
+  }
+}
+
+/* ================= MOBILE ================= */
+
+@media (max-width: 576px) {
+  .logo h1 {
+    font-size: 2rem;
+  }
+
+  .navbar-toggler {
+    padding: 4px 10px;
+  }
+
+  .navbar-collapse {
+    text-align: center;
+  }
+
+  .nav-link {
+    font-size: 1rem;
+    padding: 8px 0 !important;
+  }
+}
+/* ================= CONTAINER ================= */
+
+.cloud-container {
+  position: relative;
+  width: 100%;
+  height: 420px;
+  overflow: hidden;
+}
+
+/* ================= CLOUD ITEMS ================= */
+
+.cloud-item {
+  position: absolute;
+  padding: 18px 35px;
+  border-radius: 60px;
+  background: linear-gradient(to right, #009fff, #005bea);
+  color: white;
+  font-weight: bold;
+  font-size: 2rem;
+  box-shadow: 0 12px 35px rgba(0, 123, 255, 0.25);
+  white-space: nowrap;
+  user-select: none;
+}
+
+/* ================= DESKTOP ================= */
+
+.cloud-0 {
+  top: 70px;
+  left: 8%;
+}
+
+.cloud-1 {
+  top: 230px;
+  left: 20%;
+}
+
+.cloud-2 {
+  top: 120px;
+  left: 40%;
+}
+
+.cloud-3 {
+  top: 230px;
+  left: 58%;
+}
+
+.cloud-4 {
+  top: 120px;
+  left: 78%;
+}
+
+.cloud-5 {
+  top: 250px;
+  left: 82%;
+}
+
+.cloud-6 {
+  top: 30px;
+  left: 30%;
+}
+
+.cloud-7 {
+  top: 140px;
+  left: 83%;
+}
+
+/* ================= LAPTOP ================= */
+
+@media (max-width: 1400px) {
+  .cloud-container {
+    height: 380px;
+  }
+
+  .cloud-item {
+    font-size: 1.6rem;
+    padding: 15px 28px;
+  }
+
+  .cloud-0 {
+    left: 5%;
+  }
+
+  .cloud-1 {
+    left: 18%;
+  }
+
+  .cloud-2 {
+    left: 38%;
+  }
+
+  .cloud-3 {
+    left: 55%;
+  }
+
+  .cloud-4 {
+    left: 73%;
+  }
+
+  .cloud-5 {
+    left: 78%;
+  }
+
+  .cloud-7 {
+    left: 78%;
+  }
+}
+
+/* ================= TABLET ================= */
+
+@media (max-width: 992px) {
+  .cloud-container {
+    height: 320px;
+  }
+
+  .cloud-item {
+    font-size: 1.2rem;
+    padding: 12px 22px;
+  }
+
+  .cloud-0 {
+    top: 50px;
+    left: 5%;
+  }
+
+  .cloud-1 {
+    top: 180px;
+    left: 15%;
+  }
+
+  .cloud-2 {
+    top: 90px;
+    left: 38%;
+  }
+
+  .cloud-3 {
+    top: 190px;
+    left: 55%;
+  }
+
+  .cloud-4 {
+    top: 80px;
+    left: 72%;
+  }
+
+  .cloud-5 {
+    top: 210px;
+    left: 75%;
+  }
+
+  .cloud-6 {
+    top: 20px;
+    left: 28%;
+  }
+
+  .cloud-7 {
+    top: 130px;
+    left: 70%;
+  }
+}
+
+/* ================= MOBILE ================= */
+
+@media (max-width: 576px) {
+  .cloud-container {
+    height: 250px;
+  }
+
+  .cloud-item {
+    font-size: 0.9rem;
+    padding: 10px 18px;
+    border-radius: 40px;
+  }
+
+  .cloud-0 {
+    top: 40px;
+    left: 5%;
+  }
+
+  .cloud-1 {
+    top: 150px;
+    left: 18%;
+  }
+
+  .cloud-2 {
+    top: 70px;
+    left: 52%;
+  }
+
+  .cloud-3 {
+    top: 185px;
+    left: 50%;
+  }
+
+  .cloud-4 {
+    top: 110px;
+    left: 76%;
+  }
+
+  .cloud-5 {
+    top: 185px;
+    left: 73%;
+  }
+
+  .cloud-6 {
+    top: 20px;
+    left: 35%;
+
+    min-width: 70px; /* FIX */
+    height: 90px;
+  }
+
+  .cloud-7 {
+    top: 135px;
+    left: 66%;
+  }
+  .hero h1 {
+    font-size: 1.5rem;
+    padding-top: 2rem;
+  }
+  .hero p {
+    max-width: fit-content;
+  }
+  .osCat {
+    margin: 2rem;
+    max-width: 325px;
+  }
+  .Categories {
+    display: flex;
+    flex-direction: column;
+  }
+  .inputCategory {
+    margin: 0.5rem;
+  }
+  .card-body p,
+  .fcfsDef {
+    font-size: 1rem;
+  }
+  .adv-card,
+  .dis-card {
+    margin-bottom: 20px;
+  }
+  .adv-card li,
+  .dis-card li {
+    font-size: 1rem;
+  }
+}
+.cloud-item {
+  position: absolute;
+
+  min-width: 170px; /* FIX */
+  height: 90px; /* FIX */
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  border-radius: 60px;
+
+  background: linear-gradient(to right, #009fff, #005bea);
+
+  color: white;
+  font-weight: bold;
+  font-size: 2rem;
+
+  box-shadow: 0 12px 35px rgba(0, 123, 255, 0.25);
+
+  white-space: nowrap;
+  user-select: none;
+}
+@media (max-width: 576px) {
+  .cloud-item {
+    min-width: 90px;
+    height: 50px;
+
+    font-size: 0.9rem;
+  }
+}
